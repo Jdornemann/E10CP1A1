@@ -43,14 +43,11 @@ end
 
 10.times do |x|
     r = Random.new
-
     student = Student.new(Faker::Simpsons.character, r.rand(1..7),r.rand(1..7))
     puts student.nombre 
-puts student.nota1 
-puts student.nota2
-puts student.result
-
-
+    puts student.nota1 
+    puts student.nota2
+    puts student.result
 end
 
 puts "NUmero de instancias : #{Student.student_quantity} "
